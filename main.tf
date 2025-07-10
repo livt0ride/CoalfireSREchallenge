@@ -1,11 +1,8 @@
-# Defining provider and region
-provider "aws" {
-  region = "us-west-2"
-}
+
 
 # Defining local variables
 locals {
-  vpc_cidr       = "10.1.0.0/16"
+  vpc_cidr       = var.cidr_block
   azs            = ["us-west-2a", "us-west-2b"]
   management_cidr = "YOUR_IP/32" # Replace with your IP address
 }
