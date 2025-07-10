@@ -1,6 +1,6 @@
 # Defining provider and region
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
 
 # Defining local variables
